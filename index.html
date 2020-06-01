@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="Shortcut Icon" href="IMAGES/logo.ico" type="image/x-icon" />
+  <title>Bicilandia</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+       M.AutoInit();
+    });
+</script>
+</head>
+<body>
+
+
+  <nav class="nav-extended teal">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Bicilandia</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!-- Menu para dispositivos móviles-->
+
+    </div>
+    <div class="nav-content">
+        <!--Menu principal-->
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#principal">Home</a></li>
+          <li class="tab"><a href="#ubicacion">Ubicacion</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="principal" >
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Bicilandia</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Rodando por tus sueños</h5>
+        </div>
+        <div class="row center">
+          <a href="#Productos" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Servicios</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="IMAGES/r.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">directions_bike</i></h2>
+            <h5 class="center">¿Quienes somos?</h5>
+
+            <p class="light">Somos una empresa dedicada a crear productos para las bicicletas desde el año 2016. Teniendo varios acercamientos en proyecto emprendedores del estado de Guanajuato, ganando un titulo como el mejor proyecto jovén en San Diego de la Union.</p>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">BICILANDIA</h5>
+            <p class="light"><img src="IMAGES/b.jpg" class="responsive-img"></p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            
+            <h5 class="center">Propietario</h5>
+              <img src="IMAGES/y.jpg" class="responsive-img">
+            <p class="light">Antonio Habacuc Aparicio Pérez</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">La mejor opción del mercado</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="IMAGES/r2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contactanos</h4>
+              <form class="col s12" id="" >
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="inpNombre" type="text" class="validate">
+                    <label for="icon_prefix">Nombre Completo</label>
+                  </div>
+    
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">directions_bike</i>
+                    <input id="inpdireccion" type="text" class="validate">
+                    <label for="directions_bike">Dirección</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="inpmail" type="email" class="validate">
+                    <label for="icon_prefix">E-mail</label>
+                  </div>
+
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">call</i>
+                    <input id="inptelefono" type="number" class="validate">
+                    <label for="directions_bike">Teléfono</label>
+                  </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">announcement</i>
+                  <input id="inpcomentario" type="text" class="validate">
+                  <label for="icon_prefix">Comentarios</label>
+                </div>
+                <div class="input-field col s6">
+                  <button class="btn waves-effect waves-light" type="submit"  onclick="return enviarFormulario();" value="Enviar">
+                    Enviar
+                    <i class="material-icons right">send</i>
+                  </button>
+                  <input type="Reset" value="Reiniciar" class="btn-flat">
+                </div>
+
+                </div>
+
+              </form>
+              <div id="error"></div>
+              <div id="correcto"></div>
+              
+        </div>
+        
+      </div>
+        </div>
+        
+      </div>
+
+
+    </div>
+
+    <div id="ubicacion" class="col s12 center">
+      <h3 class="text-brown">
+        ENCUENTRANOS
+      </h3>
+      <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1590944380844!6m8!1m7!1sqm_Mx6is_aix58HIwY9SEg!2m2!1d21.46678327088651!2d-100.8731207626129!3f39.16859543107526!4f-14.220181817977135!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+  
+    </div>
+
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Los mejores productos para tu bicicleta.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="IMAGES/r3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+<!---->
+    <!-- Elementos colapsables -->
+  <ul class="collapsible">
+    <h4 class="center">Productos y Servicios</h4>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Productos.</div>
+        <div class="collapsible-body">
+          <div class="row">
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a1.jpg">
+                  <span class="card-title">Cascos de proteccion</span>
+                  
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... 
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a2.jpg">
+                  <span class="card-title">Rines Trifasicos</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a3.jpg">
+                  <span class="card-title">Candado de Proteccion</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Más... </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a4.jpg">
+                  <span class="card-title">Contador de carreras</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a5.jpg">
+                  <span class="card-title">Asiento Tracero</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a6.jpg">
+                  <span class="card-title">Diversas Piezas</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a7.jpg">
+                  <span class="card-title">Porta Celulares</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/a8.jpg">
+                  <span class="card-title">Faros</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Leer Mas... </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </li>
+
+      <li>
+        <div class="collapsible-header"><i class="material-icons">format_paint</i>Servicios.</div>
+        <div class="collapsible-body">
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s1.jpg">
+                  <span class="card-title">Ajuste de cadena.</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Ajuste de cadena.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s2.jpg">
+                  <span class="card-title">Ajuste de Cuadro</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Ajuste de Cuadro</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s3.jpg">
+                  <span class="card-title">Ajuste de Frenos.</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Ajuste de Frenos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s4.jpg">
+                  <span class="card-title">Lubricacion de cadena.</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Lubricacion de cadena.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s5.jpg">
+                  <span class="card-title">Ajuste de corona.</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Ajuste de corona.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6 m6">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="IMAGES/s6.jpg">
+                  <span class="card-title">Ajuste de ejes.</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Ajuste de ejes.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        
+        </div>
+      </li>
+    </ul>
+  </div>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bicilandia</h5>
+          <p class="grey-text text-lighten-4"></p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contactactame</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.facebook.com/home">Faceboock</a></li>
+            <li><a class="white-text" href="#!">Whatsapp :4181340440</a></li>
+            <li><a class="white-text" href="https://twitter.com/home">Twitter</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/validaciones.js"></script>
+
+</body>
+</html>
